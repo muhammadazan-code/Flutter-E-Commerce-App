@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/state_manager.dart';
 import 'package:intl/intl.dart';
@@ -29,6 +28,7 @@ class THelperFunctions {
     } else if (value == 'Brown') {
       return Colors.brown;
     }
+    return null;
   }
 
   static void showSnackBar(String message) {
@@ -78,6 +78,7 @@ class THelperFunctions {
   static double screenHeight() {
     return MediaQuery.of(Get.context!).size.height;
   }
+
   static double screenWidth() {
     return MediaQuery.of(Get.context!).size.width;
   }

@@ -19,7 +19,7 @@ class TFormatter {
     return phoneNumber;
   }
 
-  static void internationalFormatPhoneNumber(String phoneNumber) {
+  static String internationalFormatPhoneNumber(String phoneNumber) {
     var digitsOnly = phoneNumber.replaceAll(RegExp(r'\0'), '');
 
     String countryCode = '+${digitsOnly.substring(0, 2)}';
@@ -41,5 +41,6 @@ class TFormatter {
       }
       i == end;
     }
+    return formattedNumber.toString();
   }
 }
