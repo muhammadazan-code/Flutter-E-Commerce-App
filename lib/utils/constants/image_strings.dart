@@ -11,9 +11,9 @@ class TImageSize {
 
   // ---- On Boarding Images
   static const String onBoardingImage1 =
-      "assets/images/on_boarding_images/sammy_line_searching.png";
+      "assets/images/on_boarding_images/on-boarding-image-1.png";
   static const String onBoardingImage2 =
-      "assets/images/on_boarding_images/sammy_line_shopping.png";
+      "assets/images/on_boarding_images/on-boarding-image-2.png";
   static const String onBoardingImage3 =
-      "assets/images/on_boarding_images/sammy_line_delivery.png";
+      "assets/images/on_boarding_images/on-boarding-image-3.png";
 }

@@ -11,7 +11,7 @@ class OnBoardingNextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDakrMode(context);
+    final dark = THelperFunctions.isDarkMode(context);
     return Positioned(
       right: TSizes.defaultSpace,
       bottom: TDeviceUtilities.getBottomNavigationBarHeight(),
@@ -21,7 +21,7 @@ class OnBoardingNextButton extends StatelessWidget {
           backgroundColor: dark ? TColor.primaryColor : Colors.black,
         ),
         onPressed: () => OnBoardingController.instance.nextPage(),
-        child: Icon(Iconsax.arrow_right3,color: dark? Colors.white: Colors.black,),
+        child: Icon(Iconsax.arrow_right_3,color: dark? TColor.light: TColor.borderSecondary,),
       ),
     );
   }

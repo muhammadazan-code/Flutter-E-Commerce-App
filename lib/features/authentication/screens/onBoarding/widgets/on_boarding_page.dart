@@ -17,22 +17,16 @@ class OnBoardingPage extends StatelessWidget {
       padding: EdgeInsetsGeometry.all(TSizes.defaultSpace),
       child: Column(
         children: [
-          Image.asset(
-            image.toString(),
-            width: THelperFunctions.screenWidth() * 0.6,
-            height: THelperFunctions.screenHeight() * 0.6,
+          Image(
+            width: THelperFunctions.screenWidth() * .9,
+            height: THelperFunctions.screenHeight() * .6,
+            image: AssetImage(image.toString()),
           ),
-          // Image(
-          //   width: THelperFunctions.screenWidth() * .8,
-          //   height: THelperFunctions.screenHeight() * .6,
-          //   image: AssetImage(image),
-          // ),
           Text(
             title,
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-
           SizedBox(height: TSizes.spaceBetweenItems),
           Text(
             subtitle,

@@ -14,4 +14,23 @@ class TText {
   // -- home
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Muhammad Azan";
+
+  // -- Login Screen title
+  static const String loginTitle = "Welcome back,";
+  static const String loginSubTitle =
+      "Discover Limitless Choices and Unmatched Convenience";
+  static const String email = "E-mail";
+  static const String forgotPassword = "Forgot Password";
+  static const String password = "Password";
+  static const String newPassword = "New Password";
+  static const String username = "Username";
+  static const String createAccount = "Create an Account";
+  static const String rememberMe = "Remember Me";
+  static const String firstname = "First Name";
+  static const String lastname = "Last Name";
+  static const String orSignInWith = "Or Sign in with";
+
+  // Sign In Title
+  static const String signInTitle = "Let's create an account";
+  static const String signIn = "Sign In";
 }

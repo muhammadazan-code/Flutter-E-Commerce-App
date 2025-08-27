@@ -67,7 +67,7 @@ class THelperFunctions {
     }
   }
 
-  static bool isDakrMode(BuildContext context) {
+  static bool isDarkMode(BuildContext context) {
     return Theme.of(context).brightness == Brightness.dark;
   }
 
