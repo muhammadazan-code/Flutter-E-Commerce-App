@@ -1,0 +1,8 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[86861],{
+
+/***/ 855923:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {__c.K0m=__webpack_require__(895693).ZZ;__c.L0m=__webpack_require__(943474).O;__c.M0m=__webpack_require__(535921).T;__c.N0m=__webpack_require__(291650).w;__c.O0m=__webpack_require__(268245).p;var P0m;P0m=__webpack_require__(186901);__c.Q0m=P0m.EW;__c.R0m=P0m.h5;__c.S0m=P0m.m3;__c.T0m=P0m.XI;__c.U0m=__webpack_require__(212943).H;__c.V0m=__webpack_require__(536618)._y;__c.W0m=__webpack_require__(609971).F;__c.X0m=__webpack_require__(296423).x;__c.Y0m=__webpack_require__(316440).s;__c.Z0m=__webpack_require__(128788).i;__c.$0m=__webpack_require__(976373).B;__c.a1m=__webpack_require__(843630).c;__c.b1m=__webpack_require__(802861).r;
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/32fe1cb3d9bcbc2d.js.map

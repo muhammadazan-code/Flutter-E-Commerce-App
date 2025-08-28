@@ -1,0 +1,12 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[8010],{
+
+/***/ 105356:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);__web_req__(212946);__web_req__(764820);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var eSl=__c.F(()=>({...__c.LIh(),type:__c.A("A?",1,"CONTENT"),content:__c.D(1,__c.Bg)}));var fSl=__c.$a(()=>({type:[1,eSl,2,__c.MIh]}),__c.LIh);var hSl,gSl;
+hSl=class{async lZd(a,b){const c=b&&b.va&&this.V&&this.V.startSpan("createresizejob.http_client",b.va);b=__c.ih(__c.gh([gSl,"resize-job"]));const d={Uf:c&&{va:c},Sa:"createresizejob"},[e,{a8o:f}]=await Promise.all([this.Da.post(b,fSl.serialize(a),d).catch(g=>{c&&c.end("error",new Map([["error_type","http_request"]]));throw g;}),__webpack_require__.me(863379).then(()=>({a8o:__c.bSl})).catch(g=>{c&&c.end("error",new Map([["error_type","dynamic_import"]]));throw g;})]);a=f.deserialize(e);c&&c.end();
+return a}async sbi(a,b){const c=b&&b.va&&this.V&&this.V.startSpan("findresizejobs.http_client",b.va);b=__c.ih(__c.gh([gSl,"resize-job","find"]));const d={Uf:c&&{va:c},Sa:"findresizejobs"},[e,{$fp:f}]=await Promise.all([this.Da.post(b,__c.NIh.serialize(a),d).catch(g=>{c&&c.end("error",new Map([["error_type","http_request"]]));throw g;}),__webpack_require__.me(863379).then(()=>({$fp:__c.cSl})).catch(g=>{c&&c.end("error",new Map([["error_type","dynamic_import"]]));throw g;})]);a=f.deserialize(e);c&&
+c.end();return a}async jqk(a,b){const c=b&&b.va&&this.V&&this.V.startSpan("getresizejobresult.http_client",b.va);__c.ra(a.wc!=null&&/^[a-zA-Z0-9_-]+$/.test(a.wc));a=__c.ih(__c.gh([gSl,"resize-job",a.wc,"result"]));const [d,{llp:e}]=await Promise.all([this.Da.get(a,{Uf:c&&{va:c},Sa:"getresizejobresult"}).catch(f=>{c&&c.end("error",new Map([["error_type","http_request"]]));throw f;}),__webpack_require__.me(863379).then(()=>({llp:__c.dSl})).catch(f=>{c&&c.end("error",new Map([["error_type","dynamic_import"]]));
+throw f;})]);a=e.deserialize(d);c&&c.end();return a}constructor(a,b){this.Da=a;this.V=b&&b.Vd("design_action_api.http_client")}};gSl="designaction";__c.iPa={};__c.iPa.Wnp=hSl;
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/12d0635c34a273c8.js.map

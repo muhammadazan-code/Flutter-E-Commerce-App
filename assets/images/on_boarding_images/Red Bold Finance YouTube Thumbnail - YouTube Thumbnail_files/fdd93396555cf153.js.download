@@ -1,0 +1,8 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[77232],{
+
+/***/ 582181:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);__web_req__(764820);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var fKz,gKz,hKz,iKz;__c.FMg=function({Lf:a,Ab:b,ka:c,CBd:d,errorService:e,L6h:f}){a=new dKz({Jwe:b.brand.zd?.Jwe,Kwe:b.brand.zd?.Kwe,eVg:a.brands.get(b.brand.id)===1});if(f){const g=new eKz(a,d,e,c);return{cgb:a,ymm:{Ipl:async()=>g.Ipl()}}}return{cgb:a,ymm:{}}};fKz=__webpack_require__(186901);gKz=fKz.EW;hKz=fKz.h5;iKz=fKz.sH;var eKz=class{async Ipl(){try{const a=await this.CBd(),{B3d:b}=await a.cYm({document:this.ka});hKz(()=>this.store.B3d=b);return b?.Ba}catch(a){this.errorService.ra(a,{La:"Unable to retrieve brand controls for folder",tags:new Map([["owner","BOA"]])})}}constructor(a,b,c,d){this.store=a;this.CBd=b;this.errorService=c;this.ka=d}};var dKz=class{static G(a){__c.O(a,{B3d:iKz.ref,yTa:gKz,D3d:gKz,E3d:gKz,IP:gKz,M4:gKz})}get yTa(){return this.B3d?"folder":"team"}get D3d(){return this.B3d?.D3d}get E3d(){return this.B3d?.E3d}get IP(){return this.D3d??(this.Jwe&&this.eVg)}get M4(){return this.E3d??(this.Kwe&&this.eVg)}constructor({Jwe:a,Kwe:b,eVg:c}){this.eVg=(dKz.G(this),void 0);this.Jwe=a??!1;this.Kwe=b??!1;this.eVg=c}};
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/fdd93396555cf153.js.map

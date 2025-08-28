@@ -9,7 +9,7 @@ class TText {
   static const String onBoardingSubTitle2 =
       "For Seamless Transactions. Choose Your Payment Path - Your Convenience, Our Priority!";
   static const String onBoardingSubTitle3 =
-      "From OUur Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
+      "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
 
   // -- home
   static const String homeAppbarTitle = "Good day for shopping";
@@ -24,13 +24,19 @@ class TText {
   static const String password = "Password";
   static const String newPassword = "New Password";
   static const String username = "Username";
-  static const String createAccount = "Create an Account";
+  static const String createAnAccount = "Create an Account";
   static const String rememberMe = "Remember Me";
   static const String firstname = "First Name";
   static const String lastname = "Last Name";
   static const String orSignInWith = "Or Sign in with";
+  static const String phoneNumber = "Phone Number";
+  static const String iAgree = "I agree to";
+  static const String privacyPolicy = "Privacy Policy";
+  static const String and = "and";
+  static const String termsofuse = "Terms of Use";
+  static const String createAccount = "Create Account";
 
   // Sign In Title
-  static const String signInTitle = "Let's create an account";
+  static const String signInTitle = "Let's create your account";
   static const String signIn = "Sign In";
 }

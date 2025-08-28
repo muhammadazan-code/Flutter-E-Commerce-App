@@ -47,8 +47,8 @@ class TSizes {
   static double productImageHeight = 160;
 
   // Input field
-  static const double inputFieldRadius = 12;
-  static const double spaceBtwInputFields = 16;
+  static const double inputFieldRadius = 12.0;
+  static const double spaceBtwInputFields = 16.0;
 
   // Card size
   static const double cardRadiusLg = 16;

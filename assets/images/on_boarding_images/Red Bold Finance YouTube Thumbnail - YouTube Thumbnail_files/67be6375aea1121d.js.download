@@ -1,0 +1,10 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[65645],{
+
+/***/ 420124:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);__web_req__(764820);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {__c.Tgj=function(a){switch(a){case 2:return"layouts";case 1:return"unfoldered";default:throw new __c.u(a);}};
+__c.Li.prototype.nKf=__c.fa(281,async function(a){__c.ra(a.brand!=null&&/^[a-zA-Z0-9_-]{11}$/.test(a.brand));__c.ra(a.user!=null&&/^[a-zA-Z0-9_-]{11}$/.test(a.user));__c.ra(a.type!=null&&/^[^/]+$/.test(a.type));const b=__c.gh([__c.dt,"~"+a.brand,"system",a.user,a.type]);__c.eh(b,{list:__c.m(a.list),continuation:a.continuation,limit:__c.m(a.limit),decorations:a.sU.map(e=>__c.mad.serialize(e)),sortOrder:a.sortOrder&&__c.X$c.serialize(a.sortOrder),includeItemTypes:a.HG.map(e=>__c.S$c.serialize(e)),sortBy:a.As&&
+__c.Y$c.serialize(a.As),includeFoldersWhenListingUnfoldered:a.PQg,includeMetadata:__c.m(a.rbb)});a=__c.ih(b);const [c,{zmj:d}]=await Promise.all([this.Da.get(a,{Sa:"listsystemfolderapi"}),__webpack_require__.me(15713).then(()=>({zmj:__c.MUg}))]);return d.deserialize(c)});
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/67be6375aea1121d.js.map

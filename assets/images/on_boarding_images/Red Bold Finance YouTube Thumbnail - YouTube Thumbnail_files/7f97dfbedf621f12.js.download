@@ -1,0 +1,10 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[41071],{
+
+/***/ 282866:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);__web_req__(103166);__web_req__(196333);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var e8z,d8z;
+e8z=class{async d3m(){const a=__c.ih(__c.gh([d8z,"preference","user"])),[b,{Ijp:c}]=await Promise.all([this.Da.get(a,{Sa:"getemojiuserpreference"}),__webpack_require__.me(426359).then(()=>({Ijp:__c.dlr}))]);return c.deserialize(b)}async YUo(a){const b=__c.ih(__c.gh([d8z,"preference","user"])),[c,{PHp:d}]=await Promise.all([this.Da.post(b,__c.wjr.serialize(a),{Sa:"upsertemojiuserpreference"}),__webpack_require__.me(426359).then(()=>({PHp:__c.glr}))]);return d.deserialize(c)}async FLd(a){const b=__c.ih(__c.gh([d8z,
+"user","usage"])),[c,{Rzp:d}]=await Promise.all([this.Da.post(b,__c.aar.serialize(a),{Sa:"saveemojiusage"}),__webpack_require__.me(426359).then(()=>({Rzp:__c.flr}))]);return d.deserialize(c)}async LBf(){const a=__c.ih(__c.gh([d8z,"user","emojis","frequent"])),[b,{Gkp:c}]=await Promise.all([this.Da.get(a,{Sa:"getmostfrequentlyusedemojis"}),__webpack_require__.me(426359).then(()=>({Gkp:__c.elr}))]);return c.deserialize(b)}constructor(a){this.Da=a}};d8z="emoji";__c.KMa={};__c.KMa.Znp=e8z;
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/7f97dfbedf621f12.js.map

@@ -2,9 +2,9 @@ import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class LoginDivider extends StatelessWidget {
+class TFormDivider extends StatelessWidget {
   final String dividerText;
-  const LoginDivider({super.key, required this.dividerText});
+  const TFormDivider({super.key, required this.dividerText});
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +20,7 @@ class LoginDivider extends StatelessWidget {
             endIndent: 5,
           ),
         ),
-        Text(
-          dividerText          ,
-          style: Theme.of(context).textTheme.labelMedium,
-        ),
+        Text(dividerText, style: Theme.of(context).textTheme.labelMedium),
         Flexible(
           child: Divider(
             color: dark ? TColor.darkGrey : TColor.grey,

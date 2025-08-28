@@ -1,0 +1,8 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[1520],{
+
+/***/ 734237:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var ERm;__c.GRm=function({children:a,borderRadius:b,oJb:c,NUb:d,borderStyle:e,MAh:f}){return ERm("div",{className:FRm({tK5tJQ:c==="thin",wuS14Q:d==="selected",YVm1_w:b==="round",jPZnow:d==="focused",cV87iQ:c==="thick",NCWW1A:d==="selected"&&e==="dashed",daYEvA:d==="focused"&&e==="dashed",Sy5OHg:d==="none",naWjIQ:d==="default",dVODvA:d==="shadow",UwqYZA:e==="dashed",XuarSA:f,OKTyKQ:d==="page_audio_selected",dvESAA:d==="page_audio_selected"&&e==="dashed"}),children:a})};ERm=__webpack_require__(31968).jsx;var HRm=__webpack_require__,IRm=HRm(208463),FRm=HRm.n_x(IRm)();__webpack_require__(845212);
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/1422252690188a4d.js.map

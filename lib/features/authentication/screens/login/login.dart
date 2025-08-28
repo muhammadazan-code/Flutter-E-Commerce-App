@@ -22,12 +22,12 @@ class LoginScreen extends StatelessWidget {
               // Logo title and subtitle
               const LoginHeader(),
               // Form
-               LoginForm(),
+              LoginForm(),
               // Divider
-              LoginDivider(dividerText: TText.orSignInWith.capitalize!),
-              SizedBox(height: TSizes.spaceBetweenItems,),
+              TFormDivider(dividerText: TText.orSignInWith.capitalize!),
+              SizedBox(height: TSizes.spaceBetweenItems),
               // Header
-              const LoginFooter(),
+              const TSocialButton(),
             ],
           ),
         ),

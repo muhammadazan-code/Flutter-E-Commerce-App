@@ -1,0 +1,11 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[76519],{
+
+/***/ 961853:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);__web_req__(764820);__web_req__(47630);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var ikj;__c.gkj=async function({actions:a,Ra:b,errorService:c,user:d,La:e}){if(!(a.length<0))try{await b.VQa(new __c.it({user:d,types:a}))}catch(f){c.Tq(f,{La:e||"Failed to update DYNAMIC_USER actions.",extra:new Map([["action",a.map(g=>__c.Hp.serialize(g.type))]])})}};__c.hkj=function(a,b,c){b in a.nob||(a.nob[b]={});c in a.nob[b]||(a.nob[b][c]=__c.JYf(b,c,a.X.Yh?.BGa));return a.nob[b][c]};
+ikj=class{async gC(a,b){try{return await this.Ra.VQa(new __c.it({user:this.userId,types:[{type:a,tags:b}]}))}catch(c){a=__c.Hp.serialize(a),this.errorService.ra(c,{La:`Failed to update DynamicActionType enum "${a}" -`,extra:new Map([["action",a],["tags",JSON.stringify(b)]])})}}async f8c(a,b,c){try{const d=await this.Ra.mrc(new __c.yRg({user:this.userId,types:[{type:a,tags:b}],components:c}));return __c.GYf(a,d.actions)}catch(d){this.errorService.ra(d,{La:`Failed to fetch ${a}`,extra:new Map([["action",
+__c.Hp.serialize(a)]])})}}constructor(a,b,c){this.Ra=a;this.errorService=b;this.userId=c}};__c.jkj=class{async gC(a){if(a.length)return this.Zni.gC(this.action,a)}async f8c(a,b){if(a.length)return this.Zni.f8c(this.action,a,b)}constructor(a,b,c,d){this.action=d;this.Zni=new ikj(a,b,c)}};
+__c.kkj=class{gC(a,b){a in this.nob||(this.nob[a]={});this.nob[a][b]=b in this.nob[a]?this.nob[a][b]+1:1;__c.gkj({actions:[{type:a,tags:[b]}],Ra:this.Ra,errorService:this.errorService,user:this.X.user.id,La:`Failed to update interaction state for ${a} with tag ${b}`})}constructor(a,b,c){this.X=a;this.errorService=b;this.Ra=c;this.nob={}}};
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/5fe2674eaf6de65f.js.map

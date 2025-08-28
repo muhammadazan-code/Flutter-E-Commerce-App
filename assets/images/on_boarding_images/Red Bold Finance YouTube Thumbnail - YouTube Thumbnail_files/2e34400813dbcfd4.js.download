@@ -1,0 +1,10 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[71941],{
+
+/***/ 450527:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);__web_req__(279688);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var fcr;fcr=function(a){return a instanceof __c.Bp};
+__c.gcr=async function({Yl:a,errorService:b,qsd:c,vHc:d,Kk:e,ope:f,w_r:g}){const h=(new Date).getTime(),k=c.filter(l=>l.Ea!=null).map(l=>({type:"DOCTYPE",eb:l.eb,Ea:l.Ea}));try{return __c.SH(async()=>{let l;l=g?.va?g?.V.startSpan("resolve_design_specs_for_templates_batch",g.va):g?.V.wb("resolve_design_specs_for_templates_batch");try{return(await Promise.all(__c.Gl(k,100).map(async n=>(await a.$Si(new __c.T8c({H6i:n,vHc:d,Kk:e,ope:f}),{va:l})).results.map(p=>p.b3)))).flat()}catch(n){throw l?.setStatus("error",
+new Map([["error","Unexpected error fetching design specs"]])),n;}finally{l?.end()}},fcr,3)}catch(l){throw fcr(l)&&b.error("Timeout while fetching from designSpecService for WorkSuite",{extra:new Map([["timeWaitedMs",`${(new Date).getTime()-h}`],["isDocumentHidden",`${document.hidden}`],["categories",`${c.length}`]])}),l;}};
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/2e34400813dbcfd4.js.map

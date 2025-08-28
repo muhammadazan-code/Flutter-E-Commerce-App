@@ -1,0 +1,8 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[33807],{
+
+/***/ 307634:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);__web_req__(187218);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var S=__c.S;var F=__c.F;var IdA=F(()=>({}));var JdA=F(()=>({user:S(1),brand:S(2)}));var KdA=F(()=>({type:__c.A("A?",1,"PAGE"),Yb:__c.gp(1),nh:__c.U(4)}));var LdA=F(()=>({type:__c.A("A?",2,"COMMENT"),Vk:S(1)}));var MdA=F(()=>({type:__c.A("A?",3,"ELEMENT"),Af:S(1)}));var NdA=__c.$a(()=>({type:[1,KdA,2,LdA,3,MdA]}),()=>({}));var OdA=__c.I(()=>[1,2]);var PdA=F(()=>({id:S(1),mQ:S(2)}));var QdA=F(()=>({HOt:__c.D(1,__c.xjd),source:__c.Wa(2,__c.ujd),object:__c.D(3,NdA),X7s:__c.gp(4),action:__c.Wa(5,OdA),yz:__c.E(6,JdA),hLj:__c.Sa(7,PdA)}));var RdA;RdA=class{get connectionStatus(){return this.socket.connectionStatus}get sY(){return this.socket.sY}connect(a,b){return this.socket.requestChannel("reaction","connectReactionUpdate",void 0,a,b,__c.Ibr.serialize,IdA.serialize,QdA.deserialize)}constructor(a){this.socket=a}};__c.JPa={};__c.JPa.aJp=RdA;
+}).call(self, self._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/3c9a0815a008a9f3.js.map
