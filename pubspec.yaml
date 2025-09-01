@@ -20,7 +20,7 @@ dependencies:
   # Icons
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.8
-  
+
   #State Management
   get_storage: ^2.1.1
   get: ^4.7.2
@@ -42,6 +42,9 @@ flutter:
   #-------------- Local Assets -----------------#
   assets:
     - assets/images/on_boarding_images/
+    - assets/images/account_creation/
+    - assets/images/verify_email/
+    - assets/images/splash_images/
     - assets/icons/categories/
     - assets/icons/brands/
     - assets/logos/

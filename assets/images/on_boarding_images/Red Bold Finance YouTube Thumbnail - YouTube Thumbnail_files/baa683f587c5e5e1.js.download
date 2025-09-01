@@ -1,8 +1,0 @@
-(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[45181],{
-
-/***/ 383677:
-function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var TPm='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM5.5 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5V4Z" clip-rule="evenodd"/><path fill="currentColor" d="M8.75 10.25a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm0-4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5ZM8.402 18h7.196a.4.4 0 0 0 .33-.626l-1.94-2.942a.4.4 0 0 0-.635-.033L11.568 16.5l-1.18-1.166a.4.4 0 0 0-.608.053l-1.704 1.982a.4.4 0 0 0 .326.631Z"/></svg>';__c.UPm=__c.Uq({medium:TPm});
-}).call(self, self._456c437108d2d2713799e19380be528d);}
-
-}])
-//# sourceMappingURL=sourcemaps/baa683f587c5e5e1.js.map

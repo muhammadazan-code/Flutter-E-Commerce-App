@@ -1,5 +1,5 @@
-import 'package:e_commerce/commons/login_and_sign/form_divider.dart';
-import 'package:e_commerce/commons/login_and_sign/social_button.dart';
+import 'package:e_commerce/commons/widgets/login_and_sign/form_divider.dart';
+import 'package:e_commerce/commons/widgets/login_and_sign/social_button.dart';
 import 'package:e_commerce/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
@@ -12,7 +12,9 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsetsGeometry.all(TSizes.defaultSpace),
@@ -25,7 +27,6 @@ class SignUpScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               const SizedBox(height: TSizes.spaceBetweenItems),
-
               /// Form
               const TSignUpForm(),
               const SizedBox(height: TSizes.spaceBetweenItems),

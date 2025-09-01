@@ -1,9 +1,0 @@
-(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[10549],{
-
-/***/ 785562:
-function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var J=__c.J;__c.GI=function(a){__c.ra(!(a<1E5||a>1E12),"Number value entered is not with the range 100000 - 1000000000000");if(AZj())return J("ZByrSw",[a]);if(a>=95E10)return __c.M("opBlHg");const b=BZj.find(({NTe:d,kdf:e})=>a>=d&&a<e);__c.ra(!!b,"Cannot find number range");const c=a/b.base;return c<10?b.message(c):b.message(Math.round(c))};__c.LI=function(a){return a>=1E5?__c.GI(a):J("BWn0JQ",[a])};var BZj=[{NTe:1E5,kdf:1E6,base:1E3,message:a=>J("CAz9Mw",[a])},{NTe:1E6,kdf:1E7,base:1E6,message:a=>J("eleyNQ",[a])},{NTe:1E7,kdf:1E8,base:1E6,message:a=>J("jcRctQ",[a])},{NTe:1E8,kdf:1E9,base:1E6,message:a=>J("gkO82g",[a])},{NTe:1E9,kdf:1E10,base:1E9,message:a=>J("ywmE3A",[a])},{NTe:1E10,kdf:1E11,base:1E9,message:a=>J("eqzQhQ",[a])},{NTe:1E11,kdf:1E12,base:1E9,message:a=>J("EFLjHA",[a])}],AZj=__c.Na(()=>{try{const a=(new Intl.NumberFormat("en",{notation:"compact",compactDisplay:"long"})).resolvedOptions();
-return a.notation==="compact"&&a.compactDisplay==="long"}catch{return!1}});
-}).call(self, self._456c437108d2d2713799e19380be528d);}
-
-}])
-//# sourceMappingURL=sourcemaps/792b56991779c279.js.map

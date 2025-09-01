@@ -37,6 +37,18 @@ class THelperFunctions {
     ).showSnackBar(SnackBar(content: Text(message)));
   }
 
+  static double screenWidth(BuildContext context) {
+    return MediaQuery.of(context).size.width;
+  }
+
+  static double screenHeight(BuildContext context) {
+    return MediaQuery.of(context).size.height;
+  }
+
+  static Size screenSize(BuildContext context) {
+    return MediaQuery.of(context).size;
+  }
+
   static void showAlert(String title, String message) {
     showDialog(
       context: Get.context!,
@@ -69,18 +81,6 @@ class THelperFunctions {
 
   static bool isDarkMode(BuildContext context) {
     return Theme.of(context).brightness == Brightness.dark;
-  }
-
-  static Size screenSize() {
-    return MediaQuery.of(Get.context!).size;
-  }
-
-  static double screenHeight() {
-    return MediaQuery.of(Get.context!).size.height;
-  }
-
-  static double screenWidth() {
-    return MediaQuery.of(Get.context!).size.width;
   }
 
   static String getFormattedDate(

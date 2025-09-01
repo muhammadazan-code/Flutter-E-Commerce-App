@@ -1,9 +1,0 @@
-(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[25313],{
-
-/***/ 840929:
-function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var A=__c.A;var F=__c.F;var bwr,cwr,dwr,ewr,fwr,gwr,hwr,iwr,jwr,kwr,lwr;__c.$vr=F(()=>({document:__c.S(1),Of:__c.U(2)}));__c.awr=F(()=>({}));bwr=()=>({gi:__c.S(4),Wba:__c.U(5)});cwr=F(()=>({...bwr(),type:A("A?",1,"ADDED")}));dwr=F(()=>({...bwr(),type:A("A?",2,"MODIFIED")}));ewr=F(()=>({...bwr(),type:A("A?",3,"DELETED")}));fwr=F(()=>({...bwr(),type:A("A?",6,"SUGGESTION_ADDED")}));gwr=F(()=>({...bwr(),type:A("A?",7,"SUGGESTION_MODIFIED")}));hwr=F(()=>({...bwr(),type:A("A?",8,"SUGGESTION_DELETED")}));
-iwr=F(()=>({type:A("A?",1,"ASSISTANT_SUCCESS_STATE")}));jwr=F(()=>({type:A("A?",2,"ASSISTANT_ERROR_STATE"),errorMessage:__c.S(1)}));kwr=__c.$a(()=>({type:[1,iwr,2,jwr]}),()=>({}));lwr=F(()=>({...bwr(),type:A("A?",9,"RESPONSE_GENERATION_STATE"),body:__c.D(1,kwr)}));__c.mwr=__c.$a(()=>({type:[1,cwr,2,dwr,3,ewr,6,fwr,7,gwr,8,hwr,9,lwr]}),bwr);
-}).call(self, self._456c437108d2d2713799e19380be528d);}
-
-}])
-//# sourceMappingURL=sourcemaps/0bc4d9d202f77329.js.map

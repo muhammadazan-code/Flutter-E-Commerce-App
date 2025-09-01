@@ -1,9 +1,0 @@
-(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[53611],{
-
-/***/ 257975:
-function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);self._456c437108d2d2713799e19380be528d = self._456c437108d2d2713799e19380be528d || {};(function(__c) {var PDm,QDm;__c.ODm=function(a,b){return(new NDm(a,b)).connect()};PDm=function(a){a.XWi?.unsubscribe();a.XWi=a.L8q().subscribe(b=>{a.subscribers.next(b)},b=>{b instanceof __c.job||(b instanceof __c.lob||b instanceof __c.Fl&&400<=b.statusCode&&b.statusCode<=499?a.subscribers.error(b):a.FYf(b))},()=>{a.FYf(Error("unexpected completion of incoming server stream"))})};QDm=__webpack_require__(226260).c;var RDm=__webpack_require__(450117).B7;var SDm=__webpack_require__(997752).y;var NDm=class{connect(){if(this.stream)return this.stream;let a=this.zs.connectionStatus;this.stream=new QDm(b=>{this.subscribers.subscribe(b)});this.zs.sY.subscribe(b=>{switch(b){case 0:PDm(this);break;case 1:if(a===0)break;this.b8f();this.frg&&(window.clearTimeout(this.frg),this.frg=void 0);break;case 2:this.frg=0;a!==0&&PDm(this);a=void 0;break;case 3:break;default:throw new __c.u(b);}});return this.stream}FYf(a){this.b8f();const b=Math.pow(1.618,this.O9p++)*1E3;b>3E5?a&&this.subscribers.error(a):
-this.frg=window.setTimeout(()=>{this.frg=void 0;PDm(this)},b)}b8f(){this.XWi&&(this.XWi.unsubscribe(),this.XWi=void 0)}constructor(a,b){this.zs=a;this.L8q=b;this.subscribers=new RDm;this.O9p=0;this.subscription=new SDm}};
-}).call(self, self._456c437108d2d2713799e19380be528d);}
-
-}])
-//# sourceMappingURL=sourcemaps/33ce9cabcb7425a7.js.map

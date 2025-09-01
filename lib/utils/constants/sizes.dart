@@ -29,9 +29,9 @@ class TSizes {
   static const double imageThumbSize = 80;
 
   // Default Space Sizing
-  static const double defaultSpace = 24;
+  static const double defaultSpace = 24.0;
   static const double spaceBetweenItems = 16;
-  static const double spaceBetweenSections = 32;
+  static const double spaceBetweenSections = 32.0;
 
   //Border Radius
   static const double borderRadiusSm = 4.0;

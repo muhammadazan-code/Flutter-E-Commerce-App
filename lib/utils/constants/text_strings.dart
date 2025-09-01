@@ -7,7 +7,7 @@ class TText {
   static const String onBoardingSubTitle1 =
       "Welcome to a World of Limitless Choose - Your Perfect Product Awaits!";
   static const String onBoardingSubTitle2 =
-      "For Seamless Transactions. Choose Your Payment Path - Your Convenience, Our Priority!";
+      "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!";
   static const String onBoardingSubTitle3 =
       "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
 
@@ -34,9 +34,27 @@ class TText {
   static const String privacyPolicy = "Privacy Policy";
   static const String and = "and";
   static const String termsofuse = "Terms of Use";
+  static const String resendEmail = "Resend Email";
+  static const String tContinue = "Continue";
   static const String createAccount = "Create Account";
-
+  static const String submit = "Submit";
+  static const String tdone = "Done";
+  // Verify Email
+  static const String verifyYourEmailAddress = "Verify your email address!";
+  static const String verifyEmailSubtitle =
+      "Congratulation! Your Account Awaits. Verify Your Email to start Shopping and Experience a World of Unrevaled Deals and Personalized Offers.";
+  // Account created successfully
+  static const String yourAccountCreated = "Your account successfully created!";
+  static const String youraccountCreatedSubTitle =
+      "Welcome to your Ultimate; Shopping Destination Your Account is Created. Unleash the Joy of Seamless Online Shopping!";
   // Sign In Title
   static const String signInTitle = "Let's create your account";
   static const String signIn = "Sign In";
+  // Forgot Email
+  static const String forgotPasswordSubtitle =
+      "Don't worry sometimes people can forgot too, enter your email and we will send you a password reset link.";
+
+  static const String changeYourPasswordTitle = "Password Reset Email Sent";
+  static const String changeYourPasswordSubTitle =
+      "Your Account Security is our Priority! We've send you a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
 }

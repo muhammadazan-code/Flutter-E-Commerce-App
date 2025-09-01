@@ -1,4 +1,4 @@
-class TImageSize {
+class TImagePath {
   //--- App logos
   static const String darkAppLogo =
       "assets/logos/t-store-splash-logo-black.png";
@@ -16,4 +16,9 @@ class TImageSize {
       "assets/images/on_boarding_images/on-boarding-image-2.png";
   static const String onBoardingImage3 =
       "assets/images/on_boarding_images/on-boarding-image-3.png";
+  // ---- Email Verification Screen
+  static const String verifyEmail =
+      "assets/images/verify_email/email_verification.jpg";
+  static const String accountCreation =
+      "assets/images/account_creation/verification.jpg";
 }

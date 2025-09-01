@@ -3,7 +3,7 @@ import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatelessWidget {
-  OnBoardingPage({
+  const OnBoardingPage({
     super.key,
     required this.image,
     required this.subtitle,
@@ -18,8 +18,8 @@ class OnBoardingPage extends StatelessWidget {
       child: Column(
         children: [
           Image(
-            width: THelperFunctions.screenWidth() * .9,
-            height: THelperFunctions.screenHeight() * .6,
+            width: THelperFunctions.screenWidth(context) * .9,
+            height: THelperFunctions.screenHeight(context) * .6,
             image: AssetImage(image.toString()),
           ),
           Text(

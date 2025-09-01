@@ -16,7 +16,7 @@ class LoginHeader extends StatelessWidget {
         Image(
           height: 150,
           image: AssetImage(
-            dark ? TImageSize.lightAppLogo : TImageSize.darkAppLogo,
+            dark ? TImagePath.lightAppLogo : TImagePath.darkAppLogo,
           ),
         ),
         Text(

@@ -1,7 +1,10 @@
+import 'package:e_commerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:e_commerce/features/authentication/screens/signup/widgets/terms_and_conditions.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TSignUpForm extends StatelessWidget {
@@ -12,6 +15,7 @@ class TSignUpForm extends StatelessWidget {
     return Form(
       child: Column(
         children: [
+          // First and last name
           Row(
             children: [
               // First name
@@ -25,8 +29,8 @@ class TSignUpForm extends StatelessWidget {
                 ),
               ),
               SizedBox(width: TSizes.spaceBtwInputFields),
+              // Last name
               Expanded(
-                // Last name
                 child: TextFormField(
                   expands: false,
                   decoration: InputDecoration(
@@ -63,7 +67,6 @@ class TSignUpForm extends StatelessWidget {
             ),
           ),
           SizedBox(height: TSizes.spaceBtwInputFields),
-
           // Password
           TextFormField(
             obscureText: true,
@@ -78,11 +81,11 @@ class TSignUpForm extends StatelessWidget {
           /// Terms and Conditions
           TTermsandConditions(),
           const SizedBox(height: TSizes.spaceBetweenSections),
-          // Social Button
+          // Create an account
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => const VerifyEmailScreen()),
               child: Center(child: Text(TText.createAccount)),
             ),
           ),

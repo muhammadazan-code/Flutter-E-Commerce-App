@@ -39,17 +39,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             onPageChanged: controller.updatePageIndicator,
             children: [
               OnBoardingPage(
-                image: TImageSize.onBoardingImage1,
+                image: TImagePath.onBoardingImage1,
                 subtitle: TText.onBoardingSubTitle1,
                 title: TText.onBoardingTitle1,
               ),
               OnBoardingPage(
-                image: TImageSize.onBoardingImage2,
+                image: TImagePath.onBoardingImage2,
                 subtitle: TText.onBoardingSubTitle2,
                 title: TText.onBoardingTitle2,
               ),
               OnBoardingPage(
-                image: TImageSize.onBoardingImage3,
+                image: TImagePath.onBoardingImage3,
                 subtitle: TText.onBoardingSubTitle3,
                 title: TText.onBoardingTitle3,
               ),
