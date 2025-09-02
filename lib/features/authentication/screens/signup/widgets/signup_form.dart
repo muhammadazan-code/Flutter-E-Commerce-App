@@ -3,7 +3,6 @@ import 'package:e_commerce/features/authentication/screens/signup/widgets/terms_
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:get/instance_manager.dart';
 import 'package:get/route_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
