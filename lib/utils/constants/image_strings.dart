@@ -21,4 +21,21 @@ class TImagePath {
       "assets/images/verify_email/email_verification.jpg";
   static const String accountCreation =
       "assets/images/account_creation/verification.jpg";
+
+  // --- Logos
+  static const String bowling = "assets/icons/categories/bowling.png";
+  static const String cosmetic = "assets/icons/categories/cosmetics.png";
+  static const String diningChair = "assets/icons/categories/dining-chair.png";
+  static const String dogHeart = "assets/icons/categories/dog-heart.png";
+  static const String schoolUniform =
+      "assets/icons/categories/school-uniform.png";
+  static const String shoeIcon = "assets/icons/categories/shoes_icon.png";
+  static const String smartPhone = "assets/icons/categories/smartphone.png";
+
+  static const String woodenToyCar =
+      "assets/icons/categories/wooden-toy-car.png";
+  static const String tailorsDummy =
+      "assets/icons/categories/tailors-dummy.png";
+  static const String sparklingDiamont =
+      "assets/icons/categories/sparkling-diamond.png";
 }

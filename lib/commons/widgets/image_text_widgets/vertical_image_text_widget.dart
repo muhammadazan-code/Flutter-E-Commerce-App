@@ -22,14 +22,15 @@ class TVerticalImageText extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.all(TSizes.spaceBetweenItems),
+        padding: EdgeInsets.all(TSizes.sm),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             // Circular Icon
             Container(
               width: 56,
               height: 56,
-              padding: EdgeInsets.all(TSizes.sm),
+              padding: EdgeInsets.all(TSizes.xs),
               decoration: BoxDecoration(
                 color:
                     backgroundColor ??

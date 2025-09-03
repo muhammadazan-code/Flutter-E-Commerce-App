@@ -20,12 +20,13 @@ class TCartCounterWidget extends StatelessWidget {
           icon: Icon(Iconsax.shopping_bag, color: iconColor),
         ),
         Positioned(
-          right: 0,
+          top: 3,
+          right: 5,
           child: Container(
-            width: 10,
-            height: 10,
+            width: 18,
+            height: 18,
             decoration: BoxDecoration(
-              color: TColor.error.withOpacity(0.5),
+              color: TColor.black.withOpacity(0.8),
               borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
@@ -33,7 +34,7 @@ class TCartCounterWidget extends StatelessWidget {
                 "2",
                 style: Theme.of(context).textTheme.labelLarge!.copyWith(
                   color: TColor.white,
-                  fontSize: 0.8,
+                  // fontSize: 0.8,
                 ),
               ),
             ),

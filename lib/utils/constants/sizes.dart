@@ -1,7 +1,7 @@
 class TSizes {
   // Padding and Margin Sizes
-  static double xs = 4;
-  static double sm = 8;
+  static double xs = 4.0;
+  static double sm = 8.0;
   static double md = 16;
   static double lg = 24;
   static double xl = 32;
@@ -30,7 +30,7 @@ class TSizes {
 
   // Default Space Sizing
   static const double defaultSpace = 24.0;
-  static const double spaceBetweenItems = 16;
+  static const double spaceBetweenItems = 16.0;
   static const double spaceBetweenSections = 32.0;
 
   //Border Radius

@@ -30,6 +30,7 @@ class TPrimaryHeaderContainer extends StatelessWidget {
                   backgroundColor: TColor.white.withOpacity(0.1),
                 ),
               ),
+              child,
             ],
           ),
         ),
