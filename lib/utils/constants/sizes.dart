@@ -2,7 +2,7 @@ class TSizes {
   // Padding and Margin Sizes
   static double xs = 4.0;
   static double sm = 8.0;
-  static double md = 16;
+  static double md = 16.0;
   static double lg = 24;
   static double xl = 32;
 

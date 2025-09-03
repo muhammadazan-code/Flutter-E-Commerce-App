@@ -16,6 +16,9 @@ dependencies:
   intl: ^0.20.2
   logger: ^2.6.1
   url_launcher: ^6.3.2
+  flutter_native_splash: ^2.4.6
+  smooth_page_indicator: ^1.2.1
+  carousel_slider: ^5.1.1
 
   # Icons
   iconsax: ^0.0.8
@@ -24,8 +27,6 @@ dependencies:
   #State Management
   get_storage: ^2.1.1
   get: ^4.7.2
-  flutter_native_splash: ^2.4.6
-  smooth_page_indicator: ^1.2.1
 
   #Product Specific
 

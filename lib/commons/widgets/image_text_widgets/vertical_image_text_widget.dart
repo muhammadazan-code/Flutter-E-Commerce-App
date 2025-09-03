@@ -28,36 +28,36 @@ class TVerticalImageText extends StatelessWidget {
           children: [
             // Circular Icon
             Container(
-              width: 56,
-              height: 56,
+              width: 58,
+              height: 58,
               padding: EdgeInsets.all(TSizes.xs),
               decoration: BoxDecoration(
-                color:
-                    backgroundColor ??
-                    (THelperFunctions.isDarkMode(context)
-                        ? TColor.black
-                        : TColor.white),
+                color: backgroundColor ?? (dark ? TColor.black : TColor.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
                 child: Image(
+                  width: THelperFunctions.screenWidth(context) * .1,
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  color: dark ? TColor.light : TColor.dark,
+                  color: TColor.dark,
                 ),
               ),
             ),
             // Text
             const SizedBox(height: TSizes.spaceBetweenItems / 2),
-            SizedBox(
-              width: 55,
-              child: Text(
-                title,
-                style: Theme.of(
-                  context,
-                ).textTheme.labelMedium!.apply(color: textColor),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
+            Align(
+              alignment: Alignment.center,
+              child: SizedBox(
+                width: 55,
+                child: Text(
+                  title,
+                  style: Theme.of(
+                    context,
+                  ).textTheme.labelMedium!.apply(color: textColor),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
             ),
           ],

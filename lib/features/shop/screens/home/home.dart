@@ -3,6 +3,7 @@ import 'package:e_commerce/commons/widgets/custom_shape/containers/search_contai
 import 'package:e_commerce/commons/widgets/image_text_widgets/vertical_image_text_widget.dart';
 import 'package:e_commerce/commons/widgets/text/section_heading.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:e_commerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -44,11 +45,11 @@ class HomeScreen extends StatelessWidget {
                           child: ListView.builder(
                             shrinkWrap: true,
                             scrollDirection: Axis.horizontal,
-                            itemCount: 6,
+                            itemCount: TImagePath.iconImages.length,
                             itemBuilder: (context, index) {
                               return TVerticalImageText(
-                                image: TImagePath.shoeIcon,
-                                title: "Shoes",
+                                image: TImagePath.iconImages[index],
+                                title: TImagePath.namesOfIcons[index],
                                 onTap: () {},
                               );
                             },
@@ -57,6 +58,16 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: TPromoSlider(
+                banner: [
+                  TImagePath.promoBanner1,
+                  TImagePath.promoBanner2,
+                  TImagePath.promoBanner3,
                 ],
               ),
             ),
