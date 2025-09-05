@@ -1,12 +1,16 @@
 import 'package:e_commerce/commons/widgets/custom_shape/containers/primary_header_container.dart';
 import 'package:e_commerce/commons/widgets/custom_shape/containers/search_container.dart';
 import 'package:e_commerce/commons/widgets/image_text_widgets/vertical_image_text_widget.dart';
+import 'package:e_commerce/commons/widgets/layout/grid_layout.dart';
+import 'package:e_commerce/commons/widgets/products/product_cart/product_card_vertical.dart';
 import 'package:e_commerce/commons/widgets/text/section_heading.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
+import 'package:e_commerce/utils/constants/text_strings.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -49,7 +53,7 @@ class HomeScreen extends StatelessWidget {
                             itemBuilder: (context, index) {
                               return TVerticalImageText(
                                 image: TImagePath.iconImages[index],
-                                title: TImagePath.namesOfIcons[index],
+                                title: TText.namesOfIcons[index],
                                 onTap: () {},
                               );
                             },
@@ -61,13 +65,28 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            // Banners
             Padding(
               padding: const EdgeInsets.all(TSizes.defaultSpace),
-              child: TPromoSlider(
-                banner: [
-                  TImagePath.promoBanner1,
-                  TImagePath.promoBanner2,
-                  TImagePath.promoBanner3,
+              child: Column(
+                children: [
+                  TPromoSlider(
+                    banner: [
+                      TImagePath.promoBanner1,
+                      TImagePath.promoBanner2,
+                      TImagePath.promoBanner3,
+                    ],
+                  ),
+                  SizedBox(height: TSizes.spaceBetweenItems),
+                  TGridLayout(
+                    mainAxisExtent:
+                        (THelperFunctions.screenHeight(context) / 3) - 60,
+                    itemCount: TImagePath.imagePathAdresses.length,
+                    itemBuilder: (_, index) => TProductCardVertical(
+                      title: TText.productNames[index],
+                      imagePath: TImagePath.imagePathAdresses[index],
+                    ),
+                  ),
                 ],
               ),
             ),

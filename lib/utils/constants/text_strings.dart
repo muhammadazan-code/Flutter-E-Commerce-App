@@ -57,4 +57,44 @@ class TText {
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
   static const String changeYourPasswordSubTitle =
       "Your Account Security is our Priority! We've send you a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
+
+  // Names of Icons
+  static const List<String> namesOfIcons = [
+    "Cosmetic",
+    "Chair",
+    "Heart",
+    "Uniform",
+    "Shoe",
+    "Phone",
+    "Bowling",
+  ];
+
+  // Products Names
+  static List<String> productNames = [
+    "leather Jacket",
+    "leather Jacket",
+    "leather Jacket",
+    "leather Jacket",
+    "Nike Air Jordan Single Orange",
+    "Nike Shoe",
+    "Nike Air Jordan Orange",
+    "Nike Air Jordan Black Red",
+    "Nike Air Jordan Single Blue",
+    "Nike Air Jordan White Magenta",
+    "Nike Air Jordan White Red",
+    "Nike Air Max",
+    "Nike Basketball Shoe Green Black",
+    "Nike Wild Horse",
+    "Product Shirt",
+    "Samsung Back",
+    "Samsung With Back",
+    "Samsung Mobile",
+    "Tomi Dog food",
+    "Tshirt Blue Colour",
+    "Tshirt Blue Without Colour Back",
+    "Tshirt Blue Without ColourFront",
+    "Tshirt Green Colour",
+    "Tshirt Red Colour",
+    "Tshirt Yellow Colour",
+  ];
 }

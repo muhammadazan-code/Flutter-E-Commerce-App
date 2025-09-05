@@ -18,7 +18,7 @@ class TImagePath {
       "assets/images/on_boarding_images/on-boarding-image-3.png";
   // ---- Email Verification Screen
   static const String verifyEmail =
-      "assets/images/verify_email/email_verification.jpg";
+      "assets/images/verify_email/email_verification.png";
   static const String accountCreation =
       "assets/images/account_creation/verification.jpg";
 
@@ -51,13 +51,79 @@ class TImagePath {
     smartPhone,
     bowling,
   ];
-  static const List<String> namesOfIcons = [
-    "Cosmetic",
-    "Chair",
-    "Heart",
-    "Uniform",
-    "Shoe",
-    "Phone",
-    "Bowling",
+  // Product Images Path
+  static const String leatherJacket1 =
+      "assets/images/products/leather_jacket_1.png";
+  static const String leatherJacket2 =
+      "assets/images/products/leather_jacket_2.png";
+  static const String leatherJacket3 =
+      "assets/images/products/leather_jacket_3.png";
+  static const String leatherJacket4 =
+      "assets/images/products/leather_jacket_4.png";
+  static const String nikeShoe = "assets/images/products/nike-shoes.png";
+  static const String nikeAirJordanBlackRed =
+      "assets/images/products/NikeAirJOrdonBlackRed.png";
+  static const String nikeAirJordanOrange =
+      "assets/images/products/NikeAirJOrdonOrange.png";
+  static const String nikeAirJordanSingleBlue =
+      "assets/images/products/NikeAirJordonSingleBlue.png";
+  static const String nikeAirJordanSingleOrange =
+      "assets/images/products/NikeAirJordonSingleOrange.png";
+  static const String nikeAirJordanWhiteMagenta =
+      "assets/images/products/NikeAirjordonWhiteMagenta.png";
+  static const String nikeAirJordanWhiteRed =
+      "assets/images/products/NikeAirJordonWhiteRed.png";
+  static const String nikeAirMax = "assets/images/products/NikeAirMax.png";
+  static const String nikeBasketballShoeGreenBlack =
+      "assets/images/products/NikeBasketballShoeGreenBlack.png";
+  static const String nikeWildHorse =
+      "assets/images/products/nike_wild_horse.png";
+  static const String productShirt = "assets/images/products/product-shirt.png";
+  static const String samsungBack =
+      "assets/images/products/samsung_s9_mobile_back.png";
+  static const String samsungWithBack =
+      "assets/images/products/samsung_s9_mobile_withback.png";
+  static const String samsungMobile =
+      "assets/images/products/samsung_s9_mobile.png";
+  static const String tomiDogfood = "assets/images/products/tomi_dogfood.png";
+  static const String tshirtBlueCollar =
+      "assets/images/products/tshirt_blue_collar.png";
+  static const String tshirtBlueWithoutCollarBack =
+      "assets/images/products/tshirt_blue_without_collar_back.png";
+  static const String tshirtBlueWithoutCollarFront =
+      "assets/images/products/tshirt_blue_without_collar_front.png";
+  static const String tshirtGreenCollar =
+      "assets/images/products/tshirt_green_collar.png";
+  static const String tshirtRedCollar =
+      "assets/images/products/tshirt_red_collar.png";
+  static const String tshirtYellowCollar =
+      "assets/images/products/tshirt_yellow_collar.png";
+
+  static List<String> imagePathAdresses = [
+    leatherJacket1,
+    leatherJacket2,
+    leatherJacket3,
+    leatherJacket4,
+    nikeAirJordanSingleOrange,
+    nikeShoe,
+    nikeAirJordanOrange,
+    nikeAirJordanBlackRed,
+    nikeAirJordanSingleBlue,
+    nikeAirJordanWhiteMagenta,
+    nikeAirJordanWhiteRed,
+    nikeAirMax,
+    nikeBasketballShoeGreenBlack,
+    nikeWildHorse,
+    productShirt,
+    samsungBack,
+    samsungWithBack,
+    samsungMobile,
+    tomiDogfood,
+    tshirtBlueCollar,
+    tshirtBlueWithoutCollarBack,
+    tshirtBlueWithoutCollarFront,
+    tshirtGreenCollar,
+    tshirtRedCollar,
+    tshirtYellowCollar,
   ];
 }

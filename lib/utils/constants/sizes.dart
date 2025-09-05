@@ -3,7 +3,7 @@ class TSizes {
   static double xs = 4.0;
   static double sm = 8.0;
   static double md = 16.0;
-  static double lg = 24;
+  static const double lg = 24;
   static double xl = 32;
 
   // Icon Sizes
@@ -64,5 +64,5 @@ class TSizes {
   static const double imageCarouselHeight = 200;
 
   // Grid View spacing
-  static const gridViewSpace = 16;
+  static const gridViewSpace = 16.0;
 }

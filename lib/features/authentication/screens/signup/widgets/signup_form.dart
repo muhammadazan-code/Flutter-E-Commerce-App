@@ -68,7 +68,7 @@ class TSignUpForm extends StatelessWidget {
           SizedBox(height: TSizes.spaceBtwInputFields),
           // Password
           TextFormField(
-            obscureText: true,
+            obscureText: false,
             decoration: InputDecoration(
               labelText: TText.password,
               prefixIcon: Icon(Iconsax.password_check),

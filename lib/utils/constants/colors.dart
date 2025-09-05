@@ -50,4 +50,6 @@ class TColor {
     end: Alignment(0.707, -0.707),
     colors: [Color(0XFFff9a9e), Color(0xfffad0c4), Color(0xfffad0c4)],
   );
+  // Icons Color
+  static const Color redColor = Colors.red;
 }

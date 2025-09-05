@@ -43,6 +43,8 @@ flutter:
   #-------------- Local Assets -----------------#
   assets:
     - assets/images/on_boarding_images/
+    - assets/images/banners/
+    - assets/images/products/
     - assets/images/account_creation/
     - assets/images/verify_email/
     - assets/images/splash_images/
