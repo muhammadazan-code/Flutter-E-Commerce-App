@@ -4,6 +4,7 @@ import 'package:e_commerce/commons/widgets/icons/t_circular_icon.dart';
 import 'package:e_commerce/commons/widgets/images/t_rounded_image.dart';
 import 'package:e_commerce/commons/widgets/text/product_price.dart';
 import 'package:e_commerce/commons/widgets/text/product_title_text.dart';
+import 'package:e_commerce/commons/widgets/text/t_brand_title_text_with_verified_icon.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
@@ -15,10 +16,11 @@ class TProductCardVertical extends StatelessWidget {
     super.key,
     required this.title,
     required this.imagePath,
+    this.iconColor = TColor.buttonPrmary,
   });
   final String title;
   final String imagePath;
-
+  final Color iconColor;
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
@@ -86,25 +88,12 @@ class TProductCardVertical extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  TProductTitleText(title: title, smallSize: true),
+                  TProductTitleText(title: title, smallSize: true, maxLines: 1),
                   SizedBox(width: TSizes.spaceBetweenItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      // SizedBox(height: TSizes.xs),
-                      Icon(
-                        Iconsax.verify,
-                        color: TColor.primaryColor,
-                        size: TSizes.iconXs,
-                      ),
-                    ],
+                  TBrandTitleWithVerifiedIcon(
+                    title: "Nike",
+                    iconColor: iconColor,
                   ),
-                  // SizedBox(height: TSizes.spaceBetweenItems / 2),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

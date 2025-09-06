@@ -12,18 +12,22 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.leadingIcon,
     this.actions,
     this.leadingOnPressed,
+    this.bgColor,
+    this.padding = TSizes.md,
   });
   final Widget? title;
   final bool showBackArrow;
   final IconData? leadingIcon;
   final List<Widget>? actions;
   final VoidCallback? leadingOnPressed;
-
+  final Color? bgColor;
+  final double padding;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: TSizes.md),
+      padding: EdgeInsets.symmetric(horizontal: padding),
       child: AppBar(
+        backgroundColor: bgColor,
         automaticallyImplyLeading: showBackArrow,
         leading: showBackArrow
             ? IconButton(

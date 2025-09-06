@@ -51,5 +51,6 @@ class TColor {
     colors: [Color(0XFFff9a9e), Color(0xfffad0c4), Color(0xfffad0c4)],
   );
   // Icons Color
+  static const Color blackColor = Colors.black;
   static const Color redColor = Colors.red;
 }

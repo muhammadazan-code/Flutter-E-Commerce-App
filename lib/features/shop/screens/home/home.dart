@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
             ),
             // Banners
             Padding(
-              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(TSizes.defaultSpace / 5),
               child: Column(
                 children: [
                   TPromoSlider(
@@ -77,10 +77,15 @@ class HomeScreen extends StatelessWidget {
                       TImagePath.promoBanner3,
                     ],
                   ),
-                  SizedBox(height: TSizes.spaceBetweenItems),
+                  SizedBox(height: TSizes.spaceBetweenItems / 4),
+                  TSectionHeading(
+                    title: "Popular Products",
+                    buttonTitle: "View All",
+                  ),
+                  SizedBox(height: TSizes.spaceBetweenItems / 4),
                   TGridLayout(
                     mainAxisExtent:
-                        (THelperFunctions.screenHeight(context) / 3) - 60,
+                        (THelperFunctions.screenWidth(context) / 1.98) - .1,
                     itemCount: TImagePath.imagePathAdresses.length,
                     itemBuilder: (_, index) => TProductCardVertical(
                       title: TText.productNames[index],

@@ -97,4 +97,22 @@ class TText {
     "Tshirt Red Colour",
     "Tshirt Yellow Colour",
   ];
+  // List of brands logos name
+  static const List<String> namesOfLogosBrands = [
+    "Acer",
+    "Nike",
+    "Adidas",
+    "IKEA",
+  ];
+  static const List<String> sportsProductsNames = [
+    "Nike Air Jordan Orange",
+    "Nike Air Jordan Black Red",
+    "Nike Air Jordan Single Blue",
+    "Nike Air Jordan White Magenta",
+    "Nike Air Jordan White Red",
+    "Nike Air Max",
+    "Nike Basketball Shoe Green Black",
+    "Nike Wild Horse",
+    "Product Shirt",
+  ];
 }

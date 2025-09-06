@@ -5,7 +5,7 @@ class TGridLayout extends StatelessWidget {
   const TGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisExtent = 200,
+    this.mainAxisExtent = 400,
     required this.itemBuilder,
   });
   final int itemCount;
@@ -17,7 +17,6 @@ class TGridLayout extends StatelessWidget {
     return GridView.builder(
       itemCount: itemCount,
       shrinkWrap: true,
-
       physics: NeverScrollableScrollPhysics(),
       padding: EdgeInsets.zero,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
