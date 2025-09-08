@@ -3,7 +3,9 @@ import 'package:e_commerce/commons/widgets/icons/t_circular_icon.dart';
 import 'package:e_commerce/commons/widgets/layout/grid_layout.dart';
 import 'package:e_commerce/commons/widgets/products/product_cart/product_card_vertical.dart';
 import 'package:e_commerce/features/shop/screens/home/home.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -32,11 +34,13 @@ class FavouriteScreen extends StatelessWidget {
           child: Column(
             children: [
               TGridLayout(
+                mainAxisExtent:
+                    (THelperFunctions.screenWidth(context) / 1.98) - .1,
                 itemCount: 4,
                 itemBuilder: (context, index) {
                   return TProductCardVertical(
-                    title: "title",
-                    imagePath: "imagePath",
+                    title: "Nike",
+                    imagePath: TImagePath.schoolUniform,
                   );
                 },
               ),

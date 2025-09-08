@@ -159,4 +159,6 @@ class TImagePath {
     nikeBasketballShoeGreenBlack,
     nikeWildHorse,
   ];
+  // User
+  static const String userImage = "assets/images/user/user.png";
 }

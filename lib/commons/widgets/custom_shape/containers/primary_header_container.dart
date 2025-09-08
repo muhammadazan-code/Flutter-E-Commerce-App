@@ -4,16 +4,20 @@ import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class TPrimaryHeaderContainer extends StatelessWidget {
-  const TPrimaryHeaderContainer({super.key, required this.child});
+  const TPrimaryHeaderContainer({
+    super.key,
+    required this.child,
+    this.height = 370,
+  });
   final Widget child;
+  final double height;
   @override
   Widget build(BuildContext context) {
     return TCurvedEdgeWidget(
-      child: Container(
-        padding: EdgeInsets.only(bottom: 0),
-        decoration: BoxDecoration(color: TColor.primaryColor),
-        child: SizedBox(
-          height: 400,
+      child: SizedBox(
+        height: height,
+        child: Container(
+          color: TColor.primaryColor,
           child: Stack(
             children: [
               Positioned(
