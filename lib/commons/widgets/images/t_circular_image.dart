@@ -7,6 +7,7 @@ class TCircularImage extends StatelessWidget {
   const TCircularImage({
     super.key,
     this.width = 56,
+    this.border,
     this.height = 56,
     this.overlayColor,
     this.padding = TSizes.sm,
@@ -23,6 +24,7 @@ class TCircularImage extends StatelessWidget {
   final BoxFit fit;
   final Color? backgroundColor;
   final String image;
+  final BoxBorder? border;
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
@@ -33,6 +35,7 @@ class TCircularImage extends StatelessWidget {
       decoration: BoxDecoration(
         color: dark ? TColor.black : TColor.white,
         borderRadius: BorderRadius.circular(100),
+        border: border,
       ),
       child: Center(
         child: Image(
