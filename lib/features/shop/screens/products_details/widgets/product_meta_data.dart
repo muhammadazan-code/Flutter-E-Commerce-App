@@ -74,13 +74,16 @@ class TProductMetaData extends StatelessWidget {
               height: 32,
               width: 32,
             ),
+            SizedBox(width: TSizes.xs),
             TBrandTitleWithVerifiedIcon(
               title: "Nike",
               iconColor: TColor.buttonPrmary,
               brandTextTitleSize: TextSizes.medium,
+              textColor: darkMode ? TColor.textWhite : TColor.dark,
             ),
           ],
         ),
+        SizedBox(height: TSizes.md),
       ],
     );
   }

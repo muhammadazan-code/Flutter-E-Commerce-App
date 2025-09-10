@@ -27,8 +27,12 @@ class THelperFunctions {
       return Colors.indigo;
     } else if (value == 'Brown') {
       return Colors.brown;
+    } else if (value == "Yellow") {
+      return Colors.yellow;
     }
-    return null;
+    {
+      return null;
+    }
   }
 
   static void showSnackBar(String message) {

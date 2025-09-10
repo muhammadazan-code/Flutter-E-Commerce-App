@@ -13,7 +13,7 @@ class TRatingAndShare extends StatelessWidget {
         // Ratings
         Row(
           children: [
-            Icon(Iconsax.star, color: Colors.amber, size: 24),
+            Icon(Iconsax.star_14, color: Colors.amber, size: 24),
             SizedBox(width: TSizes.spaceBetweenItems / 2),
             Text.rich(
               TextSpan(

@@ -27,7 +27,7 @@ class TProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () => Get.to(() => const ProductsDetailsScreen()),
+      onTap: () => Get.to(() => ProductsDetailsScreen(imagePath: imagePath)),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),
@@ -77,7 +77,8 @@ class TProductCardVertical extends StatelessWidget {
                     Align(
                       alignment: Alignment.topRight,
                       child: TCircularIcon(
-                        icon: Icon(Iconsax.heart5, color: TColor.redColor),
+                        icon: Iconsax.heart5,
+                        iconColor: TColor.redColor,
                       ),
                     ),
                   ],

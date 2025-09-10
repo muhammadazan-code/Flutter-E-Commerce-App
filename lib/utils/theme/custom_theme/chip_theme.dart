@@ -1,21 +1,22 @@
+import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class TChipTheme {
   TChipTheme._();
 
   static ChipThemeData lightChipTheme = ChipThemeData(
-    disabledColor: Colors.grey.withOpacity(.4),
-    labelStyle: TextStyle(color: Colors.black),
-    selectedColor: Colors.blue,
+    disabledColor: TColor.grey.withOpacity(.4),
+    labelStyle: TextStyle(color: TColor.black),
+    selectedColor: TColor.primaryColor,
     padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 12.0),
-    checkmarkColor: Colors.white,
+    checkmarkColor: TColor.white,
   );
 
   static ChipThemeData darkChipTheme = ChipThemeData(
-    disabledColor: Colors.grey,
-    labelStyle: TextStyle(color: Colors.white),
-    selectedColor: Colors.blue,
+    disabledColor: TColor.darkerGrey,
+    labelStyle: TextStyle(color: TColor.white),
+    selectedColor: TColor.primaryColor,
     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-    checkmarkColor: Colors.white,
+    checkmarkColor: TColor.white,
   );
 }

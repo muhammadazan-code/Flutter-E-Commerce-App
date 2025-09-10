@@ -10,7 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart' show Iconsax;
 
 class TProductDetailImageSlider extends StatelessWidget {
-  const TProductDetailImageSlider({super.key});
+  const TProductDetailImageSlider({super.key, required this.imagePath});
+  final String imagePath;
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +26,7 @@ class TProductDetailImageSlider extends StatelessWidget {
               height: 400,
               child: Padding(
                 padding: EdgeInsets.all(TSizes.productImageRadius * 2),
-                child: Center(
-                  child: Image(image: AssetImage(TImagePath.nikeShoe)),
-                ),
+                child: Center(child: Image(image: AssetImage(imagePath))),
               ),
             ),
             // Image Slidder
@@ -61,9 +60,7 @@ class TProductDetailImageSlider extends StatelessWidget {
             TAppBar(
               showBackArrow: true,
               actions: [
-                TCircularIcon(
-                  icon: Icon(Iconsax.heart5, color: TColor.redColor),
-                ),
+                TCircularIcon(icon: Iconsax.heart5, iconColor: TColor.redColor),
               ],
             ),
           ],
