@@ -1,4 +1,5 @@
 import 'package:e_commerce/commons/widgets/text/section_heading.dart';
+import 'package:e_commerce/features/shop/screens/product_reviews/product_review_view.dart';
 import 'package:e_commerce/features/shop/screens/products_details/widgets/bottom_Add_cart_widget.dart';
 import 'package:e_commerce/features/shop/screens/products_details/widgets/product_detail_images_slider.dart';
 import 'package:e_commerce/features/shop/screens/products_details/widgets/product_meta_data.dart';
@@ -6,6 +7,8 @@ import 'package:e_commerce/features/shop/screens/products_details/widgets/produc
 import 'package:e_commerce/features/shop/screens/products_details/widgets/rate_and_share_widget.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/utils.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -43,7 +46,7 @@ class ProductsDetailsScreen extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Text("data"),
+                      child: Text("Continue"),
                     ),
                   ),
                   SizedBox(height: TSizes.spaceBetweenItems / 2),
@@ -78,8 +81,8 @@ class ProductsDetailsScreen extends StatelessWidget {
                         showActionButton: false,
                       ),
                       IconButton(
-                        onPressed: () {},
-                        icon: Icon(Iconsax.arrow_left),
+                        onPressed: () => Get.to(() => TProductReviewScreen()),
+                        icon: Icon(Iconsax.arrow_right_1),
                       ),
                     ],
                   ),
