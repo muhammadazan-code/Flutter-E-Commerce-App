@@ -8,7 +8,6 @@ import 'package:e_commerce/features/shop/screens/products_details/widgets/rate_a
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/utils.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
