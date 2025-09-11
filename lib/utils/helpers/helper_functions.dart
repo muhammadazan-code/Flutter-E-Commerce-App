@@ -41,10 +41,12 @@ class THelperFunctions {
     ).showSnackBar(SnackBar(content: Text(message)));
   }
 
+  // Here we get the device screen
   static double screenWidth(BuildContext context) {
     return MediaQuery.of(context).size.width;
   }
 
+  // Here we get the device height
   static double screenHeight(BuildContext context) {
     return MediaQuery.of(context).size.height;
   }

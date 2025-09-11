@@ -3,6 +3,7 @@ import 'package:e_commerce/commons/widgets/custom_shape/containers/primary_heade
 import 'package:e_commerce/commons/widgets/listtile/setting_menu_title.dart';
 import 'package:e_commerce/commons/widgets/listtile/user_profile_tile.dart';
 import 'package:e_commerce/commons/widgets/text/section_heading.dart';
+import 'package:e_commerce/features/personalization/screens/address/address_view.dart';
 import 'package:e_commerce/features/personalization/screens/profile/profile_view.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -59,7 +60,7 @@ class SettingScreen extends StatelessWidget {
                     title: "My Addresses",
                     subtitle: "Set Shopping Delivery Adresses",
                     icon: Iconsax.safe_home,
-                    onTap: () {},
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   TSettingsMenuTile(
                     title: "My Cart",
