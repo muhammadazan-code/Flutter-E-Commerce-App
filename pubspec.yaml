@@ -26,9 +26,9 @@ dependencies:
 
   #State Management
   get_storage: ^2.1.1
-  get: ^4.7.2
   readmore: ^3.0.0
   flutter_rating_bar: ^4.0.1
+  get: ^4.7.2
 
   #Product Specific
 
@@ -52,6 +52,7 @@ flutter:
     - assets/images/splash_images/
     - assets/icons/categories/
     - assets/icons/brands/
+    - assets/icons/payments/
     - assets/logos/
     - assets/images/user/
 

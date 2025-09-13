@@ -161,4 +161,16 @@ class TImagePath {
   ];
   // User
   static const String userImage = "assets/images/user/user.png";
+
+  // Payment Icon Path
+  static const String applePayIcon = "assets/icons/payments/apple-pay.png";
+  static const String creditCard = "assets/icons/payments/credit-card.png";
+  static const String googlePay = "assets/icons/payments/google-pay.png";
+  static const String masterCard = "assets/icons/payments/master-card.png";
+  static const String payPal = "assets/icons/payments/paypal.png";
+  static const String payStack = "assets/icons/payments/paystack.png";
+  static const String paytm = "assets/icons/payments/paytm.png";
+  static const String successfulpayment =
+      "assets/icons/payments/successful_payment_icon.png";
+  static const String visa = "assets/icons/visa.png";
 }

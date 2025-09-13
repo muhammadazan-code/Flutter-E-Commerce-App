@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class SuccesScreen extends StatelessWidget {
   const SuccesScreen({
     super.key,
-    required this.image,
+  required  this.image,
     required this.title,
     required this.subTitle,
     required this.onPressed,

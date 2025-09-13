@@ -3,6 +3,7 @@ import 'package:e_commerce/commons/widgets/custom_shape/containers/primary_heade
 import 'package:e_commerce/commons/widgets/listtile/setting_menu_title.dart';
 import 'package:e_commerce/commons/widgets/listtile/user_profile_tile.dart';
 import 'package:e_commerce/commons/widgets/text/section_heading.dart';
+import 'package:e_commerce/features/personalization/screens/Order/order_view.dart';
 import 'package:e_commerce/features/personalization/screens/address/address_view.dart';
 import 'package:e_commerce/features/personalization/screens/profile/profile_view.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
@@ -72,7 +73,7 @@ class SettingScreen extends StatelessWidget {
                     title: "My Orders",
                     subtitle: "In-progress and Completed Orders",
                     icon: Iconsax.bag_tick,
-                    onTap: () {},
+                    onTap: () => Get.to(() => OrderScreen()),
                   ),
                   TSettingsMenuTile(
                     title: "Bank Account",
