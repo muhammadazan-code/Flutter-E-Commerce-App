@@ -4,6 +4,7 @@ import 'package:e_commerce/commons/widgets/image_text_widgets/vertical_image_tex
 import 'package:e_commerce/commons/widgets/layout/grid_layout.dart';
 import 'package:e_commerce/commons/widgets/products/product_cart/product_card_vertical.dart';
 import 'package:e_commerce/commons/widgets/text/section_heading.dart';
+import 'package:e_commerce/features/shop/screens/all_product/all_product_view.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
@@ -12,6 +13,7 @@ import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -41,6 +43,8 @@ class HomeScreen extends StatelessWidget {
                           showActionButton: false,
                           title: "Popular Categories",
                           textColor: TColor.textWhite,
+                          buttonTitle: 'View All',
+                          onPressed: () => Get.to(() => AllProductScreen()),
                         ),
                         SizedBox(height: TSizes.spaceBetweenItems),
                         // Categories

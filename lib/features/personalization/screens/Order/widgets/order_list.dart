@@ -16,6 +16,8 @@ class TOrderListItems extends StatelessWidget {
           SizedBox(height: TSizes.spaceBetweenItems),
       itemCount: 10,
       itemBuilder: (context, index) => TCircularContainer(
+        height: (THelperFunctions.screenWidth(context) * .4) - 15,
+        radius: 20,
         showBorder: true,
         padding: EdgeInsets.all(TSizes.md),
         backgroundColor: dark ? TColor.dark : TColor.light,

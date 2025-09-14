@@ -9,6 +9,7 @@ class TBillingAddressSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         TSectionHeading(
           title: 'Shipping Address',

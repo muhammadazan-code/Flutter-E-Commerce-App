@@ -16,8 +16,8 @@ import 'package:iconsax/iconsax.dart';
 class TProductCardVertical extends StatelessWidget {
   const TProductCardVertical({
     super.key,
-    required this.title,
-    required this.imagePath,
+    this.title = "",
+    this.imagePath = "",
     this.iconColor = TColor.buttonPrmary,
   });
   final String title;

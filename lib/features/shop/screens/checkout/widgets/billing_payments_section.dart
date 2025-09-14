@@ -21,19 +21,18 @@ class TBillingPaymentSection extends StatelessWidget {
         ),
         SizedBox(height: TSizes.spaceBetweenItems / 2),
         Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             TCircularContainer(
               width: 60,
               height: 35,
               backgroundColor: dark ? TColor.light : TColor.white,
-              padding: EdgeInsets.all(TSizes.sm),
               child: Image(
-                image: AssetImage(TImagePath.leatherJacket1),
+                image: AssetImage(TImagePath.payPal),
                 fit: BoxFit.contain,
               ),
             ),
-            SizedBox(width: TSizes.spaceBetweenItems / 2),
-            Text('Paypal', style: Theme.of(context).textTheme.bodyLarge),
+            Text('Paypal', style: Theme.of(context).textTheme.headlineMedium),
           ],
         ),
       ],
