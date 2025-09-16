@@ -43,8 +43,6 @@ class HomeScreen extends StatelessWidget {
                           showActionButton: false,
                           title: "Popular Categories",
                           textColor: TColor.textWhite,
-                          buttonTitle: 'View All',
-                          onPressed: () => Get.to(() => AllProductScreen()),
                         ),
                         SizedBox(height: TSizes.spaceBetweenItems),
                         // Categories
@@ -85,6 +83,7 @@ class HomeScreen extends StatelessWidget {
                   TSectionHeading(
                     title: "Popular Products",
                     buttonTitle: "View All",
+                    onPressed: () => Get.to(() => AllProductScreen()),
                   ),
                   SizedBox(height: TSizes.spaceBetweenItems / 4),
                   TGridLayout(

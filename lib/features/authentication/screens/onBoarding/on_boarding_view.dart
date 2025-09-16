@@ -6,7 +6,6 @@ import 'package:e_commerce/features/authentication/screens/onBoarding/widgets/on
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/instance_manager.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -18,16 +17,6 @@ class OnBoardingScreen extends StatefulWidget {
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
   final controller = Get.put(OnBoardingController());
-
-  @override
-  void initState() {
-    super.initState();
-    initialization();
-  }
-
-  void initialization() {
-    FlutterNativeSplash.remove();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +44,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               ),
             ],
           ),
-          OnBoardingSkip(),
+          controller.currentPageIndex.value > 2 ? OnBoardingSkip() : SizedBox(),
           OnboardingNavigation(),
           OnBoardingNextButton(),
         ],
