@@ -173,4 +173,11 @@ class TImagePath {
   static const String successfulpayment =
       "assets/icons/payments/successful_payment_icon.png";
   static const String visa = "assets/icons/visa.png";
+  // Animations
+  static String docerAnimation =
+      "assets/images/animations/141594-animation-of-docer.json";
+  static String signupAnimation =
+      "assets/images/animations/Animation - 1734020174401.json";
+  static String successfullyRegisterAnimation =
+      "assets/images/animations/72462-check-register.json";
 }

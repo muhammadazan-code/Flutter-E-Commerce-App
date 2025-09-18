@@ -1,4 +1,4 @@
-import 'package:e_commerce/data/repositories/authentication_repository/authentication_repository.dart';
+import 'package:e_commerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
 import 'package:get/instance_manager.dart';
