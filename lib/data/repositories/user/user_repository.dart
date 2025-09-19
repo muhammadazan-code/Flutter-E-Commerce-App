@@ -1,5 +1,5 @@
 import 'package:e_commerce/data/personalization/models/user_models.dart';
-import 'package:e_commerce/utils/exceptions/firebase_exception.dart';
+import 'package:e_commerce/utils/exceptions/firebase_exceptions.dart';
 import 'package:e_commerce/utils/exceptions/format_exceptions.dart';
 import 'package:e_commerce/utils/exceptions/platform_exceptions.dart';
 import 'package:flutter/services.dart';
@@ -14,12 +14,12 @@ class UserRepository extends GetxController {
   Future<void> saveUserRecord(UserModel user) async {
     try {
       await _db.collection('Users').doc(user.id).set(user.toJson());
-    } on FirebaseException catch (_) {
-      throw TFirebaseExceptions();
+    } on FirebaseException catch (e) {
+      throw TFirebaseExceptions(e.code).message;
     } on FormatException catch (_) {
       throw TFormatException();
-    } on PlatformException catch (_) {
-      throw TPlatformException();
+    } on PlatformException catch (e) {
+      throw TPlatformException(e.code).message;
     } catch (e) {
       throw 'Something went wrong. Please try again.';
     }

@@ -1,17 +1,19 @@
 import 'package:e_commerce/commons/style/spacing_style.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class SuccesScreen extends StatelessWidget {
   const SuccesScreen({
     super.key,
-  required  this.image,
     required this.title,
     required this.subTitle,
     required this.onPressed,
+    this.image = TImagePath.successfullyRegisterAnimation,
   });
   final String image, title, subTitle;
   final VoidCallback onPressed;
@@ -26,9 +28,9 @@ class SuccesScreen extends StatelessWidget {
           child: Column(
             children: [
               // Image
-              Image(
+              Lottie.asset(
+                image,
                 width: THelperFunctions.screenWidth(context) * .6,
-                image: AssetImage(image),
               ),
               const SizedBox(height: TSizes.spaceBetweenSections),
               // Title and Subtitle

@@ -34,7 +34,6 @@ class TLoaders {
       backgroundColor: Colors.orange,
       duration: Duration(seconds: 3),
       margin: EdgeInsets.all(10),
-
       icon: Icon(Iconsax.warning_2, color: TColor.white),
     );
   }

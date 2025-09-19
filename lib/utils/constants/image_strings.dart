@@ -178,6 +178,6 @@ class TImagePath {
       "assets/images/animations/141594-animation-of-docer.json";
   static String signupAnimation =
       "assets/images/animations/Animation - 1734020174401.json";
-  static String successfullyRegisterAnimation =
+  static const String successfullyRegisterAnimation =
       "assets/images/animations/72462-check-register.json";
 }

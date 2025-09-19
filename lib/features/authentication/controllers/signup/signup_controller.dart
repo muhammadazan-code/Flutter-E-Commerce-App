@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:e_commerce/data/personalization/models/user_models.dart';
 import 'package:e_commerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:e_commerce/data/repositories/user/user_repository.dart';
-import 'package:e_commerce/features/authentication/screens/signup/verify_email.dart';
+import 'package:e_commerce/features/authentication/screens/signup/verify_email_screen.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/helpers/network_manager.dart';
 import 'package:e_commerce/utils/popups/full_screen_loader.dart';
@@ -35,18 +35,19 @@ class SignupController extends GetxController {
       final isConnected = await NetworkManager.instance.isConnected();
       if (!isConnected) {
         TFullScreenLoader.stopLoading();
+        return;
       }
-      // Form Validation
-      if (!signupFormKey.currentState!.validate()) {
-        TFullScreenLoader.stopLoading();
-      }
-      // Privacy Policy
+      // Privacy & Policy
       if (!privacyAndPolicy.value) {
         TLoaders.warningSnackBar(
           title: 'Accept Privacy Policy',
           message:
               'In order to create an account, You must have to read and accept the Privacy Policy and Terms of Use.',
         );
+      }
+      // Form Validation
+      if (!signupFormKey.currentState!.validate()) {
+        TFullScreenLoader.stopLoading();
         return;
       }
       // Register User in the Firebase Authentication and Save the user data in the Firebase.
@@ -74,7 +75,7 @@ class SignupController extends GetxController {
         message: 'Your account has been created! Verify email to continue.',
       );
       // Move to Verify Email Screen
-      Get.to(() => VerifyEmailScreen());
+      Get.to(() => VerifyEmailScreen(email: email.text.trim()));
     } catch (e) {
       TFullScreenLoader.stopLoading();
       // Show some Generic Error to the user

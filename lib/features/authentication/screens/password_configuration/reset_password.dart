@@ -1,4 +1,4 @@
-import 'package:e_commerce/features/authentication/screens/login/login.dart';
+import 'package:e_commerce/features/authentication/screens/login/login_screen.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
