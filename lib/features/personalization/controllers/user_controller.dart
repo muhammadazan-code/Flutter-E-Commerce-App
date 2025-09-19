@@ -3,7 +3,6 @@ import 'package:e_commerce/data/repositories/user/user_repository.dart';
 import 'package:e_commerce/utils/popups/loaders.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart';
 
 class UserController extends GetxController {
   static UserController get instance => Get.find();
@@ -30,7 +29,6 @@ class UserController extends GetxController {
         );
         // Save user data
         await userRepository.saveUserRecord(user);
-        
       }
     } catch (e) {
       TLoaders.warningSnackBar(
