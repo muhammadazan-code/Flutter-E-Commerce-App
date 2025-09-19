@@ -1,3 +1,4 @@
+import 'package:e_commerce/commons/widgets/loaders/animation_loaders.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,12 @@ class TFullScreenLoader {
               : TColor.white,
           width: double.infinity,
           height: double.infinity,
-          child: Column(children: [const SizedBox(height: 250)]),
+          child: Column(
+            children: [
+              SizedBox(height: 250),
+              TAnimationLoaderWidgets(text: text, animation: animation),
+            ],
+          ),
         ),
       ),
     );
