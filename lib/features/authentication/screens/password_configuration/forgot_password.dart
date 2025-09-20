@@ -1,10 +1,11 @@
-import 'package:e_commerce/features/authentication/screens/password_configuration/reset_password.dart';
+import 'package:e_commerce/features/authentication/controllers/forgot_password/forgot_password_controller.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
+import 'package:e_commerce/utils/validators/validations.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/get_navigation.dart';
+import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/utils.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -14,6 +15,7 @@ class ForgotPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
+    final controller = Get.put(ForgotPasswordController());
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
@@ -36,10 +38,15 @@ class ForgotPasswordScreen extends StatelessWidget {
             ),
             SizedBox(height: TSizes.spaceBetweenSections),
             // Text Form
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: TText.email,
-                prefixIcon: Icon(Iconsax.direct_right),
+            Form(
+              key: controller.forgotPasswordFormKey,
+              child: TextFormField(
+                controller: controller.email,
+                validator: TValidator.validateEmail,
+                decoration: InputDecoration(
+                  labelText: TText.email,
+                  prefixIcon: Icon(Iconsax.direct_right),
+                ),
               ),
             ),
             SizedBox(height: TSizes.spaceBetweenSections),
@@ -47,7 +54,7 @@ class ForgotPasswordScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => Get.off(() => const ResetPasswordScreen()),
+                onPressed: () => controller.sendPasswordResetEmail(),
                 child: Text(TText.submit),
               ),
             ),
