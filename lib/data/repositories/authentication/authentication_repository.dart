@@ -1,3 +1,4 @@
+import 'package:e_commerce/data/repositories/user/user_repository.dart';
 import 'package:e_commerce/features/authentication/screens/login/login_screen.dart';
 import 'package:e_commerce/features/authentication/screens/onBoarding/on_boarding_view.dart';
 import 'package:e_commerce/features/authentication/screens/signup/verify_email_screen.dart';
@@ -16,6 +17,8 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 class AuthenticationRepository extends GetxController {
   static AuthenticationRepository get instance => Get.find();
+  // Get Authenticated User data
+  User? get authUser => _auth.currentUser;
   // Variable
   final deviceStorage = GetStorage();
   final _auth = FirebaseAuth.instance;
@@ -169,6 +172,50 @@ class AuthenticationRepository extends GetxController {
   Future<void> sendPasswordResetEmail(String email) async {
     try {
       await _auth.sendPasswordResetEmail(email: email);
+    } on FirebaseAuthException catch (e) {
+      throw TFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e) {
+      throw TFirebaseExceptions(e.code).message;
+    } on FormatException catch (_) {
+      throw TFormatException();
+    } on PlatformException catch (e) {
+      throw TPlatformException(e.code).message;
+    } catch (e) {
+      throw "Something went wrong. Please try again";
+    }
+  }
+
+  /// DELETE USER - Remove User Auth and Firestore account
+  Future<void> deleteAccount() async {
+    try {
+      await UserRepository.instance.removeUserRecord(_auth.currentUser!.uid);
+      await _auth.currentUser?.delete();
+    } on FirebaseAuthException catch (e) {
+      throw TFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e) {
+      throw TFirebaseExceptions(e.code).message;
+    } on FormatException catch (_) {
+      throw TFormatException();
+    } on PlatformException catch (e) {
+      throw TPlatformException(e.code).message;
+    } catch (e) {
+      throw "Something went wrong. Please try again";
+    }
+  }
+
+  /// Re-Authenticate User before deleting
+  Future<void> reAuthenticateEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      /// Create a credential
+      AuthCredential credential = EmailAuthProvider.credential(
+        email: email,
+        password: password,
+      );
+      // ReAuthenticate
+      await _auth.currentUser?.reauthenticateWithCredential(credential);
     } on FirebaseAuthException catch (e) {
       throw TFirebaseAuthException(e.code).message;
     } on FirebaseException catch (e) {

@@ -4,8 +4,8 @@ import 'package:e_commerce/utils/formatters/formatter.dart';
 class UserModel {
   // Keep those values final which you do not want to update
   final String id;
-  final String firstName;
-  final String lastName;
+  String firstName;
+  String lastName;
   final String username;
   final String email;
   final String phoneNumber;
@@ -76,15 +76,8 @@ class UserModel {
         phoneNumber: data['PhoneNumber'] ?? '',
         profilePicture: data['ProfilePicture'] ?? '',
       );
+    } else {
+      return UserModel.empty();
     }
-    return UserModel(
-      id: 'id',
-      username: 'username',
-      email: 'email',
-      firstName: '',
-      lastName: 'lastName',
-      phoneNumber: 'phoneNumber',
-      profilePicture: 'profilePicture',
-    );
   }
 }
