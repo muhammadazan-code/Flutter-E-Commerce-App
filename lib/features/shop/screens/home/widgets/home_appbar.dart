@@ -26,7 +26,7 @@ class THomeAppBar extends StatelessWidget {
           Obx(() {
             if (controller.profileLoading.value) {
               // Display a shimmer loader while user profile is being used.
-              return const TShimmerEffect(width: 80, height: 15);
+              return const TShimmerEffect(width: 100, height: 15);
             } else {
               return Text(
                 controller.user.value.fullName,
