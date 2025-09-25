@@ -5,6 +5,7 @@ import 'package:e_commerce/commons/widgets/custom_shape/containers/search_contai
 import 'package:e_commerce/commons/widgets/layout/grid_layout.dart';
 import 'package:e_commerce/commons/widgets/products/cart/cart_menu.dart';
 import 'package:e_commerce/commons/widgets/text/section_heading.dart';
+import 'package:e_commerce/features/shop/controllers/category_controller.dart';
 import 'package:e_commerce/features/shop/screens/store/widget/category_tab.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
@@ -18,9 +19,10 @@ class TStoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = CategoryController.instance.featuredCategory;
     final dark = THelperFunctions.isDarkMode(context);
     return DefaultTabController(
-      length: 5,
+      length: controller.length,
       child: Scaffold(
         appBar: TAppBar(
           bgColor: dark ? TColor.black : TColor.white,
@@ -82,25 +84,17 @@ class TStoreScreen extends StatelessWidget {
                   ),
                 ),
                 bottom: TTabBar(
-                  tabs: [
-                    Tab(child: Text("Sports")),
-                    Tab(child: Text("Furniture")),
-                    Tab(child: Text("Electronics")),
-                    Tab(child: Text("Clothes")),
-                    Tab(child: Text("Cosmetics")),
-                  ],
+                  tabs: controller
+                      .map((element) => Tab(child: Text(element.name)))
+                      .toList(),
                 ),
               ),
             ];
           },
           body: TabBarView(
-            children: [
-              TCategoryTab(),
-              TCategoryTab(),
-              TCategoryTab(),
-              TCategoryTab(),
-              TCategoryTab(),
-            ],
+            children: controller
+                .map((element) => TCategoryTab(categoryModel: element))
+                .toList(),
           ),
         ),
       ),

@@ -95,7 +95,7 @@ class UserController extends GetxController {
           backgroundColor: TColor.redColor,
           side: BorderSide(color: TColor.redColor),
         ),
-        onPressed: () => deleteUseAccount(),
+        onPressed: () => deleteUserAccount(),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: TSizes.lg),
           child: Text('Delete'),
@@ -109,7 +109,7 @@ class UserController extends GetxController {
   }
 
   // Delete User Account
-  Future<void> deleteUseAccount() async {
+  Future<void> deleteUserAccount() async {
     try {
       TFullScreenLoader.stopLoading();
 
@@ -156,7 +156,7 @@ class UserController extends GetxController {
       );
       await AuthenticationRepository.instance.deleteAccount();
       TFullScreenLoader.stopLoading();
-      Get.offAll(() => LoginScreen());
+      Get.off(() => LoginScreen());
     } catch (e) {
       TFullScreenLoader.stopLoading();
       TLoaders.warningSnackBar(title: 'Oh Snap!', message: e.toString());

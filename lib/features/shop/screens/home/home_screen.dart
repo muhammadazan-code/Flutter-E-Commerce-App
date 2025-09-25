@@ -1,11 +1,11 @@
 import 'package:e_commerce/commons/widgets/custom_shape/containers/primary_header_container.dart';
 import 'package:e_commerce/commons/widgets/custom_shape/containers/search_container.dart';
-import 'package:e_commerce/commons/widgets/image_text_widgets/vertical_image_text_widget.dart';
 import 'package:e_commerce/commons/widgets/layout/grid_layout.dart';
 import 'package:e_commerce/commons/widgets/products/product_cart/product_card_vertical.dart';
 import 'package:e_commerce/commons/widgets/text/section_heading.dart';
 import 'package:e_commerce/features/shop/screens/all_product/all_product_view.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:e_commerce/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
@@ -46,21 +46,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SizedBox(height: TSizes.spaceBetweenItems),
                         // Categories
-                        SizedBox(
-                          height: 100,
-                          child: ListView.builder(
-                            shrinkWrap: true,
-                            scrollDirection: Axis.horizontal,
-                            itemCount: TImagePath.iconImages.length,
-                            itemBuilder: (context, index) {
-                              return TVerticalImageText(
-                                image: TImagePath.iconImages[index],
-                                title: TText.namesOfIcons[index],
-                                onTap: () {},
-                              );
-                            },
-                          ),
-                        ),
+                        THomeCategories(),
                       ],
                     ),
                   ),
