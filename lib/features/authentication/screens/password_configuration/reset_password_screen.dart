@@ -1,4 +1,5 @@
-import 'package:e_commerce/features/authentication/screens/login/login.dart';
+import 'package:e_commerce/features/authentication/controllers/forgot_password/forgot_password_controller.dart';
+import 'package:e_commerce/features/authentication/screens/login/login_screen.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -9,8 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
-  const ResetPasswordScreen({super.key});
-
+  const ResetPasswordScreen({super.key, required this.email});
+  final String email;
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
@@ -35,7 +36,12 @@ class ResetPasswordScreen extends StatelessWidget {
                 image: AssetImage(TImagePath.verifyEmail),
               ),
               const SizedBox(height: TSizes.spaceBetweenSections),
-              // Title and Subtitle
+              //Email, Title and Subtitle
+              Text(
+                email,
+                style: Theme.of(context).textTheme.bodyMedium,
+                textAlign: TextAlign.center,
+              ),
               Text(
                 TText.changeYourPasswordTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
@@ -63,7 +69,8 @@ class ResetPasswordScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () => ForgotPasswordController.instance
+                      .resendPasswordResetEmail(email),
                   child: Text(TText.resendEmail),
                 ),
               ),

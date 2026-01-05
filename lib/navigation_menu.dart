@@ -1,5 +1,5 @@
 import 'package:e_commerce/features/personalization/screens/settings/setting_view.dart';
-import 'package:e_commerce/features/shop/screens/home/home.dart';
+import 'package:e_commerce/features/shop/screens/home/home_screen.dart';
 import 'package:e_commerce/features/shop/screens/store/store.dart';
 import 'package:e_commerce/features/shop/screens/wishlist/wishlist_view.dart';
 import 'package:e_commerce/utils/constants/colors.dart';

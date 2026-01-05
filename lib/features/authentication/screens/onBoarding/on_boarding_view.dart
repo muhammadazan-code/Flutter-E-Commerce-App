@@ -1,4 +1,4 @@
-import 'package:e_commerce/features/authentication/controller_onboarding/on_boarding_controller.dart';
+import 'package:e_commerce/features/authentication/controllers/onboarding/on_boarding_controller.dart';
 import 'package:e_commerce/features/authentication/screens/onBoarding/widgets/on_boarding_navigation.dart';
 import 'package:e_commerce/features/authentication/screens/onBoarding/widgets/on_boarding_next_button.dart';
 import 'package:e_commerce/features/authentication/screens/onBoarding/widgets/on_boarding_page.dart';
@@ -7,6 +7,7 @@ import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
+import 'package:get/state_manager.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -44,7 +45,11 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               ),
             ],
           ),
-          controller.currentPageIndex.value > 2 ? OnBoardingSkip() : SizedBox(),
+          Obx(() {
+            return controller.currentPageIndex.value < 2
+                ? OnBoardingSkip()
+                : Container();
+          }),
           OnboardingNavigation(),
           OnBoardingNextButton(),
         ],

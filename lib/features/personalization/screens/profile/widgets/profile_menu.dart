@@ -6,7 +6,7 @@ class TProfileMenu extends StatelessWidget {
   const TProfileMenu({
     super.key,
     required this.title,
-    required this.value,
+    this.value = "",
     this.onPressed,
     this.icon = Iconsax.arrow_right_34,
   });
@@ -18,7 +18,7 @@ class TProfileMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPressed,
+      onTap: onPressed!,
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: TSizes.spaceBetweenItems / 1.5),
         child: Row(
