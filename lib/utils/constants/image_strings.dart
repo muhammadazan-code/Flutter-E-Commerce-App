@@ -6,8 +6,8 @@ class TImagePath {
       "assets/logos/t-store-splash-logo-white.png";
 
   //--- Special Logos
-  static const String google = "assets/logos/facebook-logo.png";
-  static const String facebook = "assets/logos/google-logo.png";
+  static const String google = "assets/logos/google-logo.png";
+  static const String facebook = "assets/logos/facebook-logo.png";
 
   // ---- On Boarding Images
   static const String onBoardingImage1 =

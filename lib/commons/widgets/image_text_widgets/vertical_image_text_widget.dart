@@ -1,3 +1,4 @@
+import 'package:e_commerce/commons/widgets/images/t_circular_image.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
@@ -9,6 +10,7 @@ class TVerticalImageText extends StatelessWidget {
     this.onTap,
     required this.image,
     required this.title,
+    this.isNetworkImage = true,
     this.textColor = TColor.white,
     this.backgroundColor = TColor.white,
   });
@@ -16,6 +18,7 @@ class TVerticalImageText extends StatelessWidget {
   final String image, title;
   final Color? textColor;
   final Color? backgroundColor;
+  final bool isNetworkImage;
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
@@ -27,22 +30,13 @@ class TVerticalImageText extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             // Circular Icon
-            Container(
-              width: 58,
-              height: 58,
-              padding: EdgeInsets.all(TSizes.xs),
-              decoration: BoxDecoration(
-                color: backgroundColor ?? (dark ? TColor.black : TColor.white),
-                borderRadius: BorderRadius.circular(100),
-              ),
-              child: Center(
-                child: Image(
-                  width: THelperFunctions.screenWidth(context) * .1,
-                  image: AssetImage(image),
-                  fit: BoxFit.cover,
-                  color: TColor.dark,
-                ),
-              ),
+            TCircularImage(
+              image: image,
+              fit: BoxFit.fitWidth,
+              isNetworkImage: isNetworkImage,
+              padding: TSizes.sm * 1.4,
+              backgroundColor: backgroundColor,
+              overlayColor: dark ? TColor.light : TColor.dark,
             ),
             // Text
             const SizedBox(height: TSizes.spaceBetweenItems / 2),

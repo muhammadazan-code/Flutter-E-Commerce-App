@@ -35,8 +35,9 @@ class ChangeName extends StatelessWidget {
             SizedBox(height: TSizes.spaceBetweenSections),
             // Text Field and Button
             Form(
+              key: controller.updateUserNameFormKey,
+
               child: Column(
-                key: controller.updateUserNameFormKey,
                 children: [
                   // First Name
                   TextFormField(
